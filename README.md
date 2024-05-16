@@ -204,4 +204,57 @@
 
 ---
 
+<h4 align="center">VERSION 0.0.2</h4>
+
+---
+
+-   Created a To-Do list for organizational purposes
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>|0|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.0.1| => |0.0.2|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>|0| => |0.0.2|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---

@@ -1,0 +1,15 @@
+Look at previous API builds to see what my preferred format is
+
+Setup basic functionality for server launch in 'server.js'
+
+Setup basic route for server launch in '\routes\index.js'
+        Home page (localhost:3000/)
+        Proof of concept understanding (localhost:3000/poc)
+        Final (localhost:3000/finProj) = Text display {Hello from my route}
+Setup basic controller for server launch in '\controllers\index.js'
+        Home page (localhost:3000/)
+        Proof of concept understanding (localhost:3000/poc)
+        Final (localhost:3000/finProj) = Text display {Hello from my route}
+Adjust 'package.json' and insert dev run field
+
+index.html, styles.css, scripts.js insertion
