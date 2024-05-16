@@ -41,6 +41,9 @@
 
 ---
 
+-   Initialized local repository (REF: LOCAL)
+-   Initialized remote repository (REF: ORIGIN)
+-   Connected LOCAL to ORIGIN
 -   Initialized project launch branch (REF: 0 || OPERATIONS)
 -   Commited project skeleton, awaiting server installation
 
@@ -153,5 +156,52 @@
         <td></td>
     </tr>
 </table>
+
+<h4 align="center">VERSION 0.0.1</h4>
+
+---
+
+-   Installed NodeJS and ExpressJS Server modules
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>NPM Server Modules</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.0| => |0.0.1|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
 
 ---
