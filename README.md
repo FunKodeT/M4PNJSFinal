@@ -334,4 +334,86 @@
 
 ---
 
+<h4 align="center">VERSION 0.0.4</h4>
+
+-   Project complete
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>API\</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\API]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Client\</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\Client]</td>
+        <td>- [index.html = |0|]<br>- [styles.css = |0|]<br>- [scripts.js = |0|]</td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.0.3| => |0.0.4|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>exIndex.js</td>
+        <td>|0| => |0.0.4|</td>
+        <td>= [API\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>exIndex.js</td>
+        <td>|0| => |0.0.4|</td>
+        <td>= [API\routes\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>MOVED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>MAINDIR\+</td>
+        <td>|N/A|</td>
+        <td>= [MAINDIR\+] => [API\+]</td>
+        <td>- MC: Moved for later development minus:<br>- README.md<br>- todo.txt</td>
+    </tr>
+</table>
+
+---
+
 ---
