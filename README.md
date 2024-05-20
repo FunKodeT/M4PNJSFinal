@@ -39,8 +39,6 @@
 
 <h4 align="center">VERSION 0.0</h4>
 
----
-
 -   Initialized local repository (REF: LOCAL)
 -   Initialized remote repository (REF: ORIGIN)
 -   Connected LOCAL to ORIGIN
@@ -159,8 +157,6 @@
 
 <h4 align="center">VERSION 0.0.1</h4>
 
----
-
 -   Installed NodeJS and ExpressJS Server modules
 -   Pushed LOCAL to ORIGIN
 
@@ -206,8 +202,6 @@
 
 <h4 align="center">VERSION 0.0.2</h4>
 
----
-
 -   Created a To-Do list for organizational purposes
 -   Pushed LOCAL to ORIGIN
 
@@ -252,6 +246,89 @@
         <td>|0| => |0.0.2|</td>
         <td>= [MAINDIR\]</td>
         <td></td>
+    </tr>
+</table>
+
+---
+
+<h4 align="center">VERSION 0.0.3</h4>
+
+-   Inserted NodeJS mask
+-   Removed previously established files to ensure clean start
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>COPIED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>NodeJS Starter Pack\+</td>
+        <td>|N/A|</td>
+        <td>= [TestingRepo\NodeJS Starter Pack\+] => [MAINDIR\+]</td>
+        <td>- MC: NodeJS Mask Contents added to PNJSFINAL\ from external directory</td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.0.2| => |0.0.3|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>|0.0.2| => |0.0.3|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>REMOVED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>0.0</td>
+        <td>|0.0|</td>
+        <td>= [N/A]</td>
+        <td>- MC: Removed everything made for v0.0 minus:<br>- 0<br>- PNJSFINAL\<br>- .env<br>- .gitignore<br>- README.md<br></td>
+    </tr>
+    <tr>
+        <td>0.0.1</td>
+        <td>|0.0.1|</td>
+        <td>= [N/A]</td>
+        <td>- MC: Removed everything made for v0.0.1</td>
+    </tr>
+    <tr>
+        <td>0.0.2</td>
+        <td>|0.0.2|</td>
+        <td>= [N/A]</td>
+        <td>- MC: Removed everything made for v0.0.2 minus:<br>- todo.txt</td>
     </tr>
 </table>
 

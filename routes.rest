@@ -1,0 +1,30 @@
+### GET SERVERTEST1 ROUTE
+GET http://localhost:3000/ HTTP/1.1
+
+### GET SERVERTEST2 ROUTE
+GET http://localhost:3000/test2 HTTP/1.1
+
+### GET ALLEXAMPLES ROUTE
+GET http://localhost:3000/examples
+
+### GET ONEEXAMPLES ROUTE
+GET http://localhost:3000/examples/(//Insert_exampleID) HTTP/1.1
+
+### POST NEWEXAMPLES ROUTE
+GET http://localhost:3000/examples HTTP/1.1
+Content-Type: application/json
+{
+    "firstName": "Example1",
+    "lastName": "Test1",
+}
+
+### PATCH PATCHEXAMPLES ROUTE
+PATCH http://localhost:3000/examples/(//Insert_exampleID) HTTP/1.1
+Content-Type: application/json
+{
+    "firstName": "Example2",
+    "lastName": "Test2",
+}
+
+### DELETE DELEXAMPLES ROUTE
+DELETE http://localhost:3000/examples/(//Insert_exampleID) HTTP/1.1
