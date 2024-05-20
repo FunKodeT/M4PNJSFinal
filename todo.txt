@@ -1,6 +1,65 @@
-Look at previous API builds to see what my preferred format is
-        PNJSStudentAPI will be my baseline
-        I will use the previous projects resource files to start the server
-        I built a NodeJS mask for ease of use in the future
-
-index.html, styles.css, scripts.js insertion
+{
+[PROJECT: FINAL PREPARATION]
+        [1.] Look at previous API builds to see what my preferred format is
+                * PNJSStudentAPI will be my baseline
+                * I will use the previous projects resource files to start the server
+                * I built a NodeJS mask for ease of use in the future
+                * Created NodeJS mask for future projects
+                |COMPLETE|
+        [2.] index.html, styles.css, scripts.js insertion
+                [1.] Create these files
+                        * Ended up moving back-end files to API directory
+                        * Ended up putting front-end files in Client directory
+                        |COMPLETE|
+}
+{
+[PROJECT: FINAL](
+        1. Create a new application using previous projects or a template of my own making
+                [1.] Provided ideas from course:
+                        * A movie search database that includes a login
+                        * A chat app using Socket.IO
+                        * A shopping app with products that include a login
+                        * A manager app that lets you add, remove, or delete data
+                2. My application needs to consist of these minimums:
+                        * A front-end user interface
+                        * A back-end database
+                        * Editable data
+                        * A login mechanic
+                3. My application ideas:
+                        1. My own personal alarm app
+                                * Maybe I could have it connect to YouTube to play audio?
+                                * Normal functionality of an alarm
+                                * Maybe puzzle solving?
+                                [SEE: @ https://www.youtube.com/watch?v=50v8s2CLV2o]
+                        2. A calendar system
+                                * Connect to Google Calendar?
+                                * Normal functionality of a calendar
+                                [SEE:
+                                        @ https://developers.google.com/calendar/api/quickstart/nodejs#:~:text=Your%20Nodejs%20application%20runs%20and,aren't%20prompted%20for%20authorization.
+                                        @ https://developers.google.com/workspace/guides/create-project
+                                ]
+                        3. A discord note system
+                                * Connect to Google Calendar?
+                                * Would populate reminders
+                                * Functions like a bot or something
+                                [SEE:
+                                        @ https://discordpy.readthedocs.io/en/stable/discord.html
+                                        @ https://support.appreciationengine.com/support/solutions/articles/47001211829-creating-a-discord-app
+                                        @ https://discord.com/build/app-developers#:~:text=If%20you're%20familiar%20with,from%20the%20Discord%20developer%20community.
+                                        @ https://stackoverflow.com/questions/72076579/way-to-get-information-from-website-with-discord-bot
+                                ]
+                                [ALT SEE:
+                                        @ https://www.youtube.com/watch?v=G7F9y5kyjCE
+                                        @ https://discord.com/blog/how-to-use-discord-apps
+                                ]
+        [2.] The application should do something new [SEE: 1.3.1-3]
+        [3.] Must be my own ideas [SEE: 1.3.1-3]
+        [4.] Must make a GitHub repo
+                [1.] GitHub Repo M4PNJSFinal.git
+                        * @ https://www.github.com/FunKodeT/M4PNJSFinal.git
+                |COMPLETE|
+        5. Test the project before completion
+        6. Submission must be the GitHub repository URL
+        7. Submission must have a video submission showing project functionality
+        )
+}
