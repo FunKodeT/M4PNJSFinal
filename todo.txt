@@ -14,7 +14,7 @@
 }
 {
 [PROJECT: FINAL](
-        1. Create a new application using previous projects or a template of my own making
+        [1.] Create a new application using previous projects or a template of my own making
                 [1.] Provided ideas from course:
                         * A movie search database that includes a login
                         * A chat app using Socket.IO
@@ -25,20 +25,20 @@
                         * A back-end database
                         * Editable data
                         * A login mechanic
-                3. My application ideas:
-                        1. My own personal alarm app
+                [3.] My application ideas:
+                        [1.] My own personal alarm app
                                 * Maybe I could have it connect to YouTube to play audio?
                                 * Normal functionality of an alarm
                                 * Maybe puzzle solving?
                                 [SEE: @ https://www.youtube.com/watch?v=50v8s2CLV2o]
-                        2. A calendar system
+                        [2.] A calendar system
                                 * Connect to Google Calendar?
                                 * Normal functionality of a calendar
                                 [SEE:
                                         @ https://developers.google.com/calendar/api/quickstart/nodejs#:~:text=Your%20Nodejs%20application%20runs%20and,aren't%20prompted%20for%20authorization.
                                         @ https://developers.google.com/workspace/guides/create-project
                                 ]
-                        3. A discord note system
+                        [3.] A discord note system
                                 * Connect to Google Calendar?
                                 * Would populate reminders
                                 * Functions like a bot or something
@@ -52,14 +52,94 @@
                                         @ https://www.youtube.com/watch?v=G7F9y5kyjCE
                                         @ https://discord.com/blog/how-to-use-discord-apps
                                 ]
-        [2.] The application should do something new [SEE: 1.3.1-3]
-        [3.] Must be my own ideas [SEE: 1.3.1-3]
+                        [4.] An 8-ball app!
+                                |COMPLETE|
+        [2.] The application should do something new [SEE: 1.3.1-4]
+                [SEE: 1.3.4 for CHOSEN]
+                |COMPLETE|
+        [3.] Must be my own ideas [SEE: 1.3.1-4 for IDEAS]
+                [SEE: 1.3.4 for CHOSEN]
+                |COMPLETE|
         [4.] Must make a GitHub repo
                 [1.] GitHub Repo M4PNJSFinal.git
                         * @ https://www.github.com/FunKodeT/M4PNJSFinal.git
                 |COMPLETE|
-        5. Test the project before completion
-        6. Submission must be the GitHub repository URL
-        7. Submission must have a video submission showing project functionality
+        5. 8-Ball Application Outline
+                1. Home Page:
+                        * Background: 8 Ball - Empty
+                        * Navigation Bar: Ask, About, Answer ([SIGN IN] || [USERNAME])
+                        * Large Header: Do you know your future?
+                        * Middle Page: You only need ask!=>Links to Ask Page
+                        * Footer: Copyright data, page links:
+                                - Contact Us=>Contact Page
+                                - About Us=>About Page
+                                - History Lesson=>External URL to wikipedia or something
+                2. Ask Page:
+                        * Background: 8 Ball - Question Mark
+                        * Navigation Bar: Home, About, Answer ([SIGN IN] || [USERNAME])
+                        * Large Header: What future do you wish to see?
+                        * Middle Page: Text Box, [Reset] Button, [Ask] Button
+                        * Footer: Copyright data, page links:
+                                - Contact Us=>Contact Page
+                                - About Us=>About Page
+                                - History Lesson=>External URL to wikipedia or something
+                3. About Page:
+                        * Background: 8 Ball - Glowy
+                        * Navigation Bar: Ask, About, Answer ([SIGN IN] || [USERNAME])
+                        * Large Header: Who are we?
+                        * Middle Page: Seekers of Truth! Seers of the future! Not legally responsible for any actions you take regarding your future! Psychically Adept!
+                        * Footer: Copyright data, page links:
+                                - Contact Us=>Contact Page
+                                - About Us=>About Page
+                                - History Lesson=>External URL to wikipedia or something
+                4. Answer Page:
+                        * Background: 8 Ball - Answer
+                                - Page will be split, one half will be the background with an 8-ball image according to the answer the algorithm spit out
+                                - Second half will be a section for seeing previous queries.
+                                        * On click, load question and answer in top half
+                        * Navigation Bar: Ask, About, Answer ([SIGN IN] || [USERNAME])
+                        * Large Header: <User Question>
+                        * Large Header: Magic Eight Ball Says:
+                                - Organize where the header will be just above the image of the 8-ball answer
+                5. Sign In Page:
+                        * Background: 8 Ball - Empty
+                        * Basic Sign on section
+                        * Additional 'No account? Register Now!'
+                        * If(Sign-in) => {
+                                Background: 8 Ball - Glowy
+                                Text: Success! Click [HERE TO ASK YOUR QUESTIONS] or [HERE TO SEE YOUR PERSONAL PREDICTIONS]
+                          }
+                        * If(!Sign-in) => {
+                                Background: 8 Ball - Empty
+                                Text: Sorry! The 8-Ball must have missed something...  
+                        }
+                6. Register Page:
+                        * Background: 8 Ball - Question Mark
+                        * Basic registration section
+                                - USERNAME:
+                                        * Above box, 'Username'; In box, 'Who are you?'
+                                        * If(USERNAME = exists) => {
+                                                Text: Sorry! The 8-Ball already knows someone with that name...
+                                        } Else {Text: Success!
+                                        }
+                                - PASSWORD:
+                                        * Above box, 'Password'; In box, 'How do I know?'
+                                        * If(PASSWORD = weak || does not meet min) => {
+                                                Text: Sorry! The 8-Ball needs a bit more character...
+                        * Additional 'Have an account? Sign in [HERE!]
+                        * If(createAccount) => {
+                                Background: 8 Ball - Glowy
+                                Text: Welcome! Click [HERE TO ASK YOUR QUESTIONS] or [HERE TO SEE YOUR PERSONAL PREDICTIONS]
+                        }
+                        * If(!createAccount) => {
+                                Background: 8 Ball - Empty
+                                Text: Sorry! The 8-Ball must have missed something...
+                        }
+                7. Contact Us Page:
+                        * Background: 8 Ball - No
+                        * Text: Don't
+        6. Test the project before completion
+        7. Submission must be the GitHub repository URL
+        8. Submission must have a video submission showing project functionality
         )
 }

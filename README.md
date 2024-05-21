@@ -448,4 +448,79 @@
 
 ---
 
+<h4 align="center">VERSION 0.0.6</h4>
+
+-   Finalized Outline for project
+-   Prepped for Branch development
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|0.0.5| => |0.0.6|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>|0.0.5| => |0.0.6|</td>
+        <td>= [MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|0.0.4| => |0.0.6|</td>
+        <td>= [controllers\exIndex.js] => [controllers\index.js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>connect.js</td>
+        <td>|0| => |0.0.6|</td>
+        <td>= [db\exConnect.js] => [db\connect.js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Eight.js</td>
+        <td>|0| => |0.0.6|</td>
+        <td>= [models\Example.js] => [models\Eight.js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|0.0.4| => |0.0.6|</td>
+        <td>= [routes\exIndex.js] => [routes\index.js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>prediction.js</td>
+        <td>|0| => |0.0.6|</td>
+        <td>= [routes\exExample.js] => [routes\prediction.js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|0| => |0.0.6|</td>
+        <td>= [API\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|0| => |0.0.6|</td>
+        <td>= [API\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---

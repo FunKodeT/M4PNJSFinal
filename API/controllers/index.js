@@ -1,5 +1,5 @@
 const {mongo} = require('mongoose');
-const mongodb = require('../db/exConnect');
+const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 // POC FOR FINAL
@@ -20,10 +20,14 @@ const serverTest2 = (req, res, next) => {
 	);
 };
 
-// GET EXAMPLES: ALL
-const getAllExamples = async (req, res) => {
+// GET PREDICTION: ALL
+const getAllPredictions = async (req, res) => {
 	try {
-		const result = await mongodb.getDB().db().collection('examples').find();
+		const result = await mongodb
+			.getDB()
+			.db()
+			.collection('predictions')
+			.find();
 		result.toArray().then((lists) => {
 			res.setHeader('Content-Type', 'application/json');
 			res.status(200).json(lists);
@@ -33,15 +37,15 @@ const getAllExamples = async (req, res) => {
 	}
 };
 
-// GET EXAMPLES: ONE
-const getOneExamples = async (req, res) => {
+// GET PREDICTION: ONE
+const getOnePrediction = async (req, res) => {
 	try {
-		const exampleID = new ObjectId(req.params.id);
+		const predictionID = new ObjectId(req.params.id);
 		const result = await mongodb
 			.getDB()
 			.db()
-			.collection('examples')
-			.find({_id: exampleID});
+			.collection('predictions')
+			.find({_id: predictionID});
 		console.log(result);
 		result.toArray().then((lists) => {
 			res.setHeader('Content-Type', 'application/json');
@@ -52,24 +56,24 @@ const getOneExamples = async (req, res) => {
 	}
 };
 
-// POST EXAMPLES: NEW
-const newExamples = async (req, res) => {
+// POST PREDICTION: NEW
+const newPrediction = async (req, res) => {
 	try {
-		const example = {
-			firstName: req.body.firstName,
-			lastName: req.body.lastName,
+		const prediction = {
+			userQuery: req.body.userQuery,
+			ballAnswer: req.body.ballAnswer,
 		};
 		const response = await mongodb
 			.getDB()
 			.db()
-			.collection('examples')
-			.insertOne(example);
+			.collection('predictions')
+			.insertOne(prediction);
 		if (response.acknowledged) {
 			res.status(201).json(response);
 		} else {
 			res.status(500).json(
 				response.error ||
-					'Some error occured while creating new example.'
+					'Some error occured while creating new prediction.'
 			);
 		}
 	} catch (error) {
@@ -77,48 +81,22 @@ const newExamples = async (req, res) => {
 	}
 };
 
-// PATCH EXAMPLES: ONE
-const patchExamples = async (req, res) => {
+// DELETE PREDICITION: ONE
+const delPrediction = async (req, res) => {
 	try {
-		const exampleID = new ObjectId(req.params.id);
-		const example = {
-			firstName: req.body.firstName,
-			lastName: req.body.lastName,
-		};
+		const predictionID = new ObjectId(req.params.id);
 		const response = await mongodb
 			.getDB()
 			.db()
-			.collection('examples')
-			.replaceOne({_id: exampleID}, example);
-		if (response.acknowledged) {
-			res.status(204).json(response);
-		} else {
-			res.status(500).json(
-				response.error ||
-					'Some error occurred while updating the example.'
-			);
-		}
-	} catch (error) {
-		res.status(500).json(error);
-	}
-};
-
-// DELETE EXAMPLES: ONE
-const delExamples = async (req, res) => {
-	try {
-		const exampleID = new ObjectId(req.params.id);
-		const response = await mongodb
-			.getDB()
-			.db()
-			.collection('examples')
-			.deleteOne({_id: exampleID}, true);
+			.collection('predictions')
+			.deleteOne({_id: predictionID}, true);
 		console.log(response);
 		if (response.acknowledged) {
 			res.status(200).send(response);
 		} else {
 			res.status(500).json(
 				response.error ||
-					'Some error occurred while deleting this example.'
+					'Some error occurred while deleting this prediction.'
 			);
 		}
 	} catch (error) {
@@ -130,9 +108,8 @@ module.exports = {
 	finalProof,
 	serverTest1,
 	serverTest2,
-	getAllExamples,
-	getOneExamples,
-	newExamples,
-	patchExamples,
-	delExamples,
+	getAllPredictions,
+	getOnePrediction,
+	newPrediction,
+	delPrediction,
 };

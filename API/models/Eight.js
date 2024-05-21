@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const ExampleSchema = new Schema({
-	firstName: {
+const PredictionSchema = new Schema({
+	userQuery: {
 		type: String,
 		required: true,
 	},
-	lastName: {
+	ballAnswer: {
 		type: String,
 		required: true,
 	},
 });
-module.exports = mongoose.model('examples', ExampleSchema);
+module.exports = mongoose.model('predictions', PredictionSchema);

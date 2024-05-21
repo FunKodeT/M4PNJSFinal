@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mongoDB = require('./db/exConnect');
+const mongoDB = require('./db/connect');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -12,7 +12,7 @@ app.use(cors())
 		res.setHeader('Access-Control-Allow-Origin', '*');
 		next();
 	})
-	.use('/', require('./routes/exIndex'));
+	.use('/', require('./routes/index.js'));
 // This will throw an error when not connected via ethernet
 
 mongoDB.initDB((err) => {
