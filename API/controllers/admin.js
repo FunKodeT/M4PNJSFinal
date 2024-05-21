@@ -81,7 +81,7 @@ const newPrediction = async (req, res) => {
 	}
 };
 
-// DELETE PREDICITION: ONE
+// DELETE PREDICTION: ONE
 const delPrediction = async (req, res) => {
 	try {
 		const predictionID = new ObjectId(req.params.id);

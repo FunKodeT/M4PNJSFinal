@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const PredictionsController = require('../controllers/index');
+const PredictionsController = require('../controllers/admin');
 
 router.get('/', PredictionsController.getAllPredictions);
 router.get('/:id', PredictionsController.getOnePrediction);
