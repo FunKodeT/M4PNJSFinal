@@ -718,4 +718,113 @@
 
 ---
 
+<h4 align="center">VERSION 1.1</h4>
+
+---
+
+-   Commited changes made 20240523
+-   Pushed LOCAL to REMOTE
+-   Exported VS Code profile for work on different computer
+
+---
+
+<h5 align="center"><strong><em><u>ADDED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>JSCall\&+</td>
+        <td>|N/A|</td>
+        <td>=[API\JSCall\&+]</td>
+        <td>- &+[about.js|1|]<br>&+[answer.js|1|]<br>&+[ask.js|1|]<br>&+[contact.js|1|]<br>&+[home.js|1|]<br>&+[register.js|1|]<br>&+[signin.js|1|]<br>&+[signout.js|1|]</td>
+    </tr>
+    <tr>
+        <td>index.html</td>
+        <td>|1|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>||=>|1.1|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|1.0|=>|1.1|</td>
+        <td>=[MAINDIR\app.js]=>[MAINDIR\server.js]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>pages.js</td>
+        <td>|1.0|=>|1.1|</td>
+        <td>=[API\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|1.0|=>|1.1|</td>
+        <td>=[API\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>|0|=>|1.1|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>styles.css</td>
+        <td>|0|=>|1.1|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>REMOVED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>views\&+</td>
+        <td>|N/A|</td>
+        <td>=[MAINDIR\views\&+]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>middleware\&+</td>
+        <td>|N/A|</td>
+        <td>=[MAINDIR\middleware\&+]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---

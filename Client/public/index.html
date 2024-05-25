@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="A site that lets you create an account to keep track of mathematically allocated predictions that simulate the classic toy, the magic 8-ball." />
+		<link rel="stylesheet" href="../public/styles.css" />
+		<title>8-Ball</title>
+	</head>
+	<body>
+		<nav id="navBar" class="homePage">
+			<h1>Magic 8-Ball!</h1>
+			<ul>
+				<li class="askPage">
+					<button
+						type="button"
+						id="askTrigger"
+						class="button"
+						onclick="pageSwap()">
+						Ask
+					</button>
+				</li>
+				<li class="aboutPage">
+					<button type="button" id="aboutTrigger" class="button">
+						About
+					</button>
+				</li>
+				<li class="answerPage">
+					<button type="button" id="answerTrigger" class="button">
+						Answer
+					</button>
+				</li>
+			</ul>
+		</nav>
+		<main id="homePage">
+			<div class="homeHeader">
+				<h1>Do you know the future?</h1>
+				<p>
+					If you answered "no", well you are in luck! You were
+					destined to be here,
+					<br />
+					in <strong>this</strong> moment,
+					<br />
+					to ask your questions of the future, and receive answers!
+				</p>
+			</div>
+			<div class="homeAskLink">
+				<h3>Are you ready?</h3>
+				<h2>
+					The only thing left to do<br /><span id="askTrigger"
+						><u><em>is ask...</em></u></span
+					>
+				</h2>
+				<!-- 'ask' will be linked to the askPage -->
+			</div>
+		</main>
+		<footer id="footer"></footer>
+		<script src="../public/scripts.js"></script>
+	</body>
+</html>
