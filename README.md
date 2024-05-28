@@ -827,4 +827,62 @@
 
 ---
 
+<h4 align="center">VERSION 1.2</h4>
+
+---
+
+-   Commited changes 20240527
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>ask.js</td>
+        <td>||=>|1.2|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>home.js</td>
+        <td>||=>|1.2|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.html</td>
+        <td>||=>|1.2|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>||=>|1.2|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.txt</td>
+        <td>||=>|1.2|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>||=>|1.2|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---
