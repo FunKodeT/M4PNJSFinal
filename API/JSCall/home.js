@@ -3,7 +3,7 @@ function homePage() {
 	const bodyVar = document.querySelector('body');
 
 	// INSERT NEW PAGE ELEMENTS
-	let homePage = document.querySelector('main.homePage');
+	let homePage = document.querySelector('div.homePage');
 	homePage.innerHTML += `
 	<div class="homeHeader">
 	    <h1>Do you know the future?</h1>

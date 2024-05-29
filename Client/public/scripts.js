@@ -5,15 +5,16 @@ let swapPrep = (trigger) => {
 };
 
 const pageSwap = (triggerId, triggerClass) => {
+	const divId = document.getElementById('divId');
 	const mainId = document.getElementById('mainId');
-	let currentClass = mainId.className;
+	let currentClass = divId.className;
 	console.log(currentClass);
 	if (triggerClass === currentClass) {
 		return;
 	} else if (triggerId === 'askTrigger') {
-		mainId.setAttribute('class', 'askPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'askPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -23,9 +24,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else if (triggerId === 'aboutTrigger') {
-		mainId.setAttribute('class', 'aboutPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'aboutPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -35,9 +36,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else if (triggerId === 'answerTrigger') {
-		mainId.setAttribute('class', 'answerPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'answerPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -47,9 +48,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else if (triggerId === 'signInTrigger') {
-		mainId.setAttribute('class', 'signInPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'signInPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -59,9 +60,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else if (triggerId === 'signOutTrigger') {
-		mainId.setAttribute('class', 'signOutPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'signOutPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -71,9 +72,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else if (triggerId === 'registerTrigger') {
-		mainId.setAttribute('class', 'registerPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'registerPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -83,9 +84,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else if (triggerId === 'contactTrigger') {
-		mainId.setAttribute('class', 'contactPage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'contactPage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -95,9 +96,9 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	} else {
-		mainId.setAttribute('class', 'homePage');
-		mainId.innerHTML = '';
-		document.body.appendChild(mainId);
+		divId.setAttribute('class', 'homePage');
+		divId.innerHTML = '';
+		mainId.insertBefore(divId, mainId.firstChild);
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -133,60 +134,60 @@ so i need an eventlistener, that onclick of either (ASK || ABOUT || ANSWER || SI
 
 // PAGE SWAP FUNCTIONS (OLD)
 function askTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'askPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'askPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/ask.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function homeTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'homePage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'homePage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/home.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function aboutTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'aboutPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'aboutPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/about.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function answerTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'answerPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'answerPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/answer.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function signInTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'signInPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'signInPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/signin.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function signOutTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'signOutPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'signOutPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/signout.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function registerTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'registerPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'registerPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/register.js');
-	console.log(mainId);
+	console.log(divId);
 }
 function contactTrigger() {
-	let mainId = document.getElementById('mainId');
-	mainId.setAttribute('class', 'contactPage');
+	let divId = document.getElementById('divId');
+	divId.setAttribute('class', 'contactPage');
 	let askSwap = document.getElementById('scriptSwap');
 	askSwap.setAttribute('src', '../../API/JSCall/contact.js');
-	console.log(mainId);
+	console.log(divId);
 }
 
 // NAV SWAP (OLD)

@@ -3,7 +3,7 @@ function answerPage() {
 	const bodyVar = document.querySelector('body');
 
 	// INSERT NEW PAGE ELEMENTS
-	let answerPage = document.querySelector('main.answerPage');
+	let answerPage = document.querySelector('div.answerPage');
 	answerPage.innerHTML += `<div class="answerHeader">
 	<h1>Test2</h1>
 	<p>

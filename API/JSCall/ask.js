@@ -3,7 +3,7 @@ function askPage() {
 	const bodyVar = document.querySelector('body');
 
 	// INSERT NEW PAGE ELEMENTS
-	let askPage = document.querySelector('main.askPage');
+	let askPage = document.querySelector('div.askPage');
 	askPage.innerHTML += `<div class="askHeader">
 	<h1>What future do you wish to know?</h1>
 	<p>

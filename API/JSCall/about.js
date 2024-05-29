@@ -3,16 +3,12 @@ function aboutPage() {
 	const bodyVar = document.querySelector('body');
 
 	// INSERT NEW PAGE ELEMENTS
-	let aboutPage = document.querySelector('main.aboutPage');
+	let aboutPage = document.querySelector('div.aboutPage');
 	aboutPage.innerHTML += `<div class="aboutHeader">
-	<h1>Test</h1>
-	<p>
-		Test
-		<br />
-		test <strong>TEST</strong> test,
-		<br />
-		test.
-	</p>`;
+	<h1>Who are we?</h1>
+	<div>
+		<p>Seekers of Truth! Seers of the future!<br>Not legally responsible for any actions you take regarding your future!<br><strong>Psychically Adept!</strong></p>
+	</div>`;
 
 	// INSERT NEW NAV ELEMENTS
 	const navRmv = document.getElementById('navBar');

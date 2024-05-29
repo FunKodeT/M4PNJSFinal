@@ -42,8 +42,58 @@
 				</li>
 			</ul>
 		</nav>
-		<main id="mainId" class="homePage"></main>
-		<footer id="footer"></footer>
+		<nav id="navUser">
+			<ul>
+				<li class="signInPage" style="display: inline">
+					<button
+						type="button"
+						id="signInTrigger"
+						class="signInPage"
+						onclick="swapPrep(this)">
+						Sign In
+					</button>
+				</li>
+				<li class="signOutPage" style="display: none">
+					<button
+						type="button"
+						id="signOutTrigger"
+						class="signOutPage"
+						onclick="swapPrep(this)">
+						Sign Out
+					</button>
+				</li>
+				<li class="registerPage" style="display: inline">
+					<button
+						type="button"
+						id="registerTrigger"
+						class="registerPage"
+						onclick="swapPrep(this)">
+						Register
+					</button>
+				</li>
+			</ul>
+		</nav>
+
+		<main id="mainId">
+			<div id="divId" class="homePage"></div>
+		</main>
+		<footer id="footer">
+			<p>
+				Magic 8-Ball | &copy 2023 - 2024<br />Tooele Technical College |
+				Matthew L. Cootey
+			</p>
+			<div>
+				<ul>
+					<li id="contactTrigger" onclick="swapPrep(this)">
+						Contact Us
+					</li>
+					<li id="historyTrigger" onclick="swapPrep(this)">
+						Magic History Lesson
+					</li>
+					<li id="aboutTrigger" onclick="swapPrep(this)">About Us</li>
+				</ul>
+			</div>
+		</footer>
 		<script src="../public/scripts.js"></script>
 		<script id="scriptSwap" src="../../API/JSCall/home.js"></script>
 	</body>

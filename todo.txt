@@ -138,9 +138,9 @@
                 7. Contact Us Page:
                         * Background: 8 Ball - No
                         * Text: Don't
-				8. Sign Out Page:
-						* Background: 8 Ball - Goodbye
-						* Text: The 8-Ball predicts you will come back and see us soon!
+		8. Sign Out Page:
+			* Background: 8 Ball - Goodbye
+			* Text: The 8-Ball predicts you will come back and see us soon!
         6. Test the project before completion
         7. Submission must be the GitHub repository URL
         8. Submission must have a video submission showing project functionality

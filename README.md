@@ -931,4 +931,80 @@
 
 ---
 
+<h4 align="center">VERSION 1.4</h4>
+
+---
+
+-   Commited changes 20240529
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>about.js</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>answer.js</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ask.js</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>contact.js</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>home.js</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.html</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|1.3|=>|1.4|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>|1.2|=>|1.4|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---
