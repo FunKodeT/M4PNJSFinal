@@ -847,37 +847,83 @@
     </tr>
     <tr>
         <td>ask.js</td>
-        <td>||=>|1.2|</td>
+        <td>|1|=>|1.2|</td>
         <td>=[Client\public\]</td>
         <td></td>
     </tr>
     <tr>
         <td>home.js</td>
-        <td>||=>|1.2|</td>
+        <td>|1|=>|1.2|</td>
         <td>=[Client\public\]</td>
         <td></td>
     </tr>
     <tr>
         <td>index.html</td>
-        <td>||=>|1.2|</td>
+        <td>|1|=>|1.2|</td>
         <td>=[Client\public\]</td>
         <td></td>
     </tr>
     <tr>
         <td>scripts.js</td>
-        <td>||=>|1.2|</td>
+        <td>|1.1|=>|1.2|</td>
         <td>=[Client\public\]</td>
         <td></td>
     </tr>
     <tr>
-        <td>README.txt</td>
-        <td>||=>|1.2|</td>
+        <td>README.md</td>
+        <td>|1.1|=>|1.2|</td>
         <td>=[MAINDIR\]</td>
         <td></td>
     </tr>
     <tr>
         <td>todo.txt</td>
-        <td>||=>|1.2|</td>
+        <td>|1.0|=>|1.2|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h4 align="center">VERSION 1.3</h4>
+
+---
+
+-   Commited changes 20240528=TTech EOD
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>JSCall\+</td>
+        <td>|N/A|</td>
+        <td>=[API\JSCall\+]</td>
+        <td>- +[about.js|1|=>|1.3|]<br>- +[answer.js|1|=>|1.3|]<br>- +[ask.js|1.2|=>|1.3|]<br>- +[contact.js|1|=>|1.3|]<br>- +[home.js|1.2|=>|1.3|]<br>- +[register.js|1|=>|1.3|]<br>- +[signin.js|1|=>|1.3|]<br>- +[signout.js|1|=>|1.3|]</td>
+    </tr>
+    <tr>
+        <td>index.html</td>
+        <td>|1.2|=>|1.3|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>|1.2|=>|1.3|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|1.2|=>|1.3|</td>
         <td>=[MAINDIR\]</td>
         <td></td>
     </tr>
