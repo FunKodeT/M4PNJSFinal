@@ -529,8 +529,6 @@
 
 <h4 align="center">VERSION 1.0</h4>
 
----
-
 -   Initialized first working branch (REF: 1 || FIRST)
 -   Commited changes 20240521
 
@@ -720,8 +718,6 @@
 
 <h4 align="center">VERSION 1.1</h4>
 
----
-
 -   Commited changes made 20240523
 -   Pushed LOCAL to REMOTE
 -   Exported VS Code profile for work on different computer
@@ -829,8 +825,6 @@
 
 <h4 align="center">VERSION 1.2</h4>
 
----
-
 -   Commited changes 20240527
 -   Pushed LOCAL to ORIGIN
 
@@ -887,8 +881,6 @@
 
 <h4 align="center">VERSION 1.3</h4>
 
----
-
 -   Commited changes 20240528=TTech EOD
 -   Pushed LOCAL to ORIGIN
 
@@ -932,8 +924,6 @@
 ---
 
 <h4 align="center">VERSION 1.4</h4>
-
----
 
 -   Commited changes 20240529
 -   Pushed LOCAL to ORIGIN
@@ -1000,6 +990,92 @@
     <tr>
         <td>todo.txt</td>
         <td>|1.2|=>|1.4|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h4 align="center">VERSION 1.5</h4>
+
+-   Commited changes TTech EOD 20240529
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>answer.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ask.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>contact.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>register.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>signin.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>signout.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[API\JSCall\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Eight.js</td>
+        <td>|0.0.6|=>|1.5|</td>
+        <td>=[API\models\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>User.js</td>
+        <td>|1.0|=>|1.5|</td>
+        <td>=[API\models\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.html</td>
+        <td>|1.4|=|1.5|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>|1.4|=>|1.5|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|1.4|=>|1.5|</td>
         <td>=[MAINDIR\]</td>
         <td></td>
     </tr>

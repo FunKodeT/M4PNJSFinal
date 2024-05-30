@@ -44,7 +44,7 @@
 		</nav>
 		<nav id="navUser">
 			<ul>
-				<li class="signInPage" style="display: inline">
+				<li id="signInBtn" style="display: inline-block">
 					<button
 						type="button"
 						id="signInTrigger"
@@ -53,7 +53,7 @@
 						Sign In
 					</button>
 				</li>
-				<li class="signOutPage" style="display: none">
+				<li id="signOutBtn" style="display: inline-block">
 					<button
 						type="button"
 						id="signOutTrigger"
@@ -62,7 +62,7 @@
 						Sign Out
 					</button>
 				</li>
-				<li class="registerPage" style="display: inline">
+				<li id="registerBtn" style="display: inline-block">
 					<button
 						type="button"
 						id="registerTrigger"
@@ -71,6 +71,10 @@
 						Register
 					</button>
 				</li>
+				<li
+					value="loggedOut"
+					id="userName"
+					style="display: inline-block"></li>
 			</ul>
 		</nav>
 
@@ -87,8 +91,12 @@
 					<li id="contactTrigger" onclick="swapPrep(this)">
 						Contact Us
 					</li>
-					<li id="historyTrigger" onclick="swapPrep(this)">
-						Magic History Lesson
+					<li>
+						<a
+							href="https://en.wikipedia.org/wiki/Magic_8_Ball"
+							target="_blank"
+							>Magic History Lesson</a
+						>
 					</li>
 					<li id="aboutTrigger" onclick="swapPrep(this)">About Us</li>
 				</ul>

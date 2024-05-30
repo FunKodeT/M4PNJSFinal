@@ -5,7 +5,7 @@ function contactPage() {
 	// INSERT NEW PAGE ELEMENTS
 	let aboutPage = document.querySelector('div.contactPage');
 	aboutPage.innerHTML += `<div class="contactHeader">
-	<h1>You would like to contact us?/h1>
+	<h1>You would like to contact us?</h1>
 	<div>
 		<p>Don't</p>
         <div>

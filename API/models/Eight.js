@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const PredictionSchema = new Schema({
-	userQuery: {
+	userId: {
 		type: String,
 		required: true,
 	},
-	ballAnswer: {
+	userQuestion: {
+		type: String,
+		required: true,
+	},
+	magicAnswer: {
 		type: String,
 		required: true,
 	},

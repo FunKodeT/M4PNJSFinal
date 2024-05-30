@@ -1,3 +1,5 @@
+let currentPage = document.getElementById('divId');
+accountHide();
 let swapPrep = (trigger) => {
 	let triggerId = trigger.id;
 	let triggerClass = trigger.className;
@@ -9,6 +11,7 @@ const pageSwap = (triggerId, triggerClass) => {
 	const mainId = document.getElementById('mainId');
 	let currentClass = divId.className;
 	console.log(currentClass);
+
 	if (triggerClass === currentClass) {
 		return;
 	} else if (triggerId === 'askTrigger') {
@@ -108,8 +111,112 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
 	}
+	accountHide();
 };
 
+// SIGNIN, SIGNOUT, REGISTER HIDE FUNCTIONS
+// PAGE DATA FOR CHECK
+function accountHide() {
+	// PAGE DATA FOR IF
+	let signIn = document.querySelector('button.signInPage');
+	let signOut = document.querySelector('button.signOutPage');
+	let register = document.querySelector('button.registerPage');
+	let user = document.getElementById('userName');
+	/* 	console.log(currentPage);
+	console.log(signIn);
+	console.log(signOut);
+	console.log(register);
+	console.log(user); */
+
+	// USER CHECK
+	localStorage.setItem('user', 'loggedOut');
+	let userState = localStorage.getItem('user');
+	// localStorage.setItem('user', '');
+
+	// NAV HIDE / SHOW DISPLAY FUNCTION
+	if (signIn !== '' && register !== '' && signOut !== '' && user !== '') {
+		if (
+			userState == 'loggedOut' &&
+			currentPage.className !== 'signInPage'
+		) {
+			console.log('user is not logged in, and page is not signInPage');
+			user.style.display = 'none';
+			signIn.style.display = 'inline-block';
+			register.style.display = 'inline-block';
+			signOut.style.display = 'none';
+		} else if (
+			userState == 'loggedIn' &&
+			currentPage.className !== 'signInPage'
+		) {
+			console.log('user is logged in, and page is not signInPage');
+			user.style.display = 'inline-block';
+			signIn.style.display = 'none';
+			register.style.display = 'none';
+			signOut.style.display = 'inline-block';
+		} else if (
+			userState == 'loggedOut' &&
+			currentPage.className == 'signInPage'
+		) {
+			console.log('user is not logged in, and page is signInPage');
+			user.style.display = 'none';
+			signIn.style.display = 'none';
+			register.style.display = 'inline-block';
+			signOut.style.display = 'none';
+		} else if (
+			userState == 'loggedIn' &&
+			currentPage.className == 'signInPage'
+		) {
+			console.log('user is logged in, and page is signInPage');
+			user.style.display = 'inline-block';
+			signIn.style.display = 'none';
+			register.style.display = 'none';
+			signOut.style.display = 'inline-block';
+		} else if (
+			userState == 'loggedOut' &&
+			currentPage.className == 'registerPage'
+		) {
+			console.log('user is not logged in, and page is registerPage');
+			user.style.display = 'none';
+			signIn.style.display = 'inline-block';
+			register.style.display = 'none';
+			signOut.style.display = 'none';
+		} else if (
+			userState == 'loggedIn' &&
+			currentPage.className == 'registerPage'
+		) {
+			console.log('user is logged in, and page is registerPage');
+			user.style.display = 'inline-block';
+			signIn.style.display = 'none';
+			register.style.display = 'none';
+			signOut.style.display = 'inline-block';
+		} else if (
+			userState == 'loggedOut' &&
+			currentPage.className == 'signOutPage'
+		) {
+			console.log('user is not logged in, and page is signOutPage');
+			user.style.display = 'none';
+			signIn.style.display = 'inline-block';
+			register.style.display = 'inline-block';
+			signOut.style.display = 'none';
+		} else if (
+			userState == 'loggedIn' &&
+			currentPage.className == 'signOutPage'
+		) {
+			console.log('user is logged in, and page is signOutPage');
+			user.style.display = 'inline-block';
+			signIn.style.display = 'none';
+			register.style.display = 'none';
+			signOut.style.display = 'none';
+		}
+	}
+}
+
+/* 
+	// HIDE SIGN IN BUTTON IF: AUTHENTICATED / ON PAGE
+	let signInHide = document.querySelector('li.signInPage');
+	console.log(signInHide);
+	signInHide.setAttribute('style', 'display: "none"');
+ */
 /* 
 // NOTES (OLD)
 

@@ -4,15 +4,28 @@ function answerPage() {
 
 	// INSERT NEW PAGE ELEMENTS
 	let answerPage = document.querySelector('div.answerPage');
-	answerPage.innerHTML += `<div class="answerHeader">
-	<h1>Test2</h1>
-	<p>
-		Test
-		<br />
-		test <strong>TEST</strong> test,
-		<br />
-		test.
-	</p>`;
+	answerPage.innerHTML += `
+	<div class="answerHeader">
+		<h1>You ask: <span id="userQuestion"></span></h1>
+		<h3>The Magic 8-Ball says:</h3>
+		<h1><span id="magicAnswer"></span></h1>
+	</div>
+	`;
+
+	// ATTACH QUESTION
+	function answerAttach() {
+		// GRABS CONTAINER FROM LOCALSTORAGE
+		let formData = JSON.parse(localStorage.getItem('formData'));
+
+		// SETS MAGICANSWER VALUE TO FORMDATA VALUE
+		let magicAnswer = document.getElementById('magicAnswer');
+		magicAnswer.innerText = formData.magicAnswer;
+
+		// SETS USER QUESTION VALUE TO FORMDATA VALUE
+		let userQuestion = document.getElementById('userQuestion');
+		userQuestion.innerText = formData.userQuestion;
+	}
+	answerAttach();
 
 	// INSERT NEW NAV ELEMENTS
 	const navRmv = document.getElementById('navBar');
