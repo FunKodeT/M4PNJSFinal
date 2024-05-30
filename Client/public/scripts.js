@@ -1,23 +1,62 @@
 let currentPage = document.getElementById('divId');
 accountHide();
+
 let swapPrep = (trigger) => {
 	let triggerId = trigger.id;
 	let triggerClass = trigger.className;
 	pageSwap(triggerId, triggerClass);
 };
 
+const pageCall = async (url) => {
+	const response = await fetch(url);
+	const scriptText = await response.text();
+	const scriptElement = document.createElement('script');
+	scriptElement.text = scriptText;
+	document.body.appendChild(scriptElement);
+};
+/* 
+const pageCall = async (url, id) => {
+	const scriptRemove = document.getElementById(id);
+	if (scriptRemove) {
+		scriptRemove.remove();
+	}
+	const response = await fetch(url);
+	const scriptText = await response.text();
+	const scriptElement = document.createElement('script');
+	scriptElement.id = id;
+	scriptElement.text = scriptText;
+	document.body.appendChild(scriptElement);
+};
+ */
+/* 
+const pageCall = async (url, id) => {
+	const response = await fetch(url);
+	const pageContent = await response.text();
+	const divId = document.getElementById('divId');
+	divId.innerHTML = pageContent;
+	const scriptTags = divId.getElementsByTagName('script');
+	for (let script of scriptTags) {
+		const newScript = document.createElement('script');
+		if (script.src) {
+			newScript.text = script.innerHTML;
+		}
+		document.body.appendChild(newScript);
+	}
+};
+ */
+
 const pageSwap = (triggerId, triggerClass) => {
 	const divId = document.getElementById('divId');
 	const mainId = document.getElementById('mainId');
 	let currentClass = divId.className;
-	console.log(currentClass);
-
 	if (triggerClass === currentClass) {
 		return;
 	} else if (triggerId === 'askTrigger') {
 		divId.setAttribute('class', 'askPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/ask');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -26,10 +65,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/ask.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+ 		*/
 	} else if (triggerId === 'aboutTrigger') {
 		divId.setAttribute('class', 'aboutPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/about');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -38,10 +80,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/about.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	} else if (triggerId === 'answerTrigger') {
 		divId.setAttribute('class', 'answerPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/answer');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -50,10 +95,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/answer.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	} else if (triggerId === 'signInTrigger') {
 		divId.setAttribute('class', 'signInPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/signIn');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -62,10 +110,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/signIn.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	} else if (triggerId === 'signOutTrigger') {
 		divId.setAttribute('class', 'signOutPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/signOut');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -74,10 +125,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/signOut.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	} else if (triggerId === 'registerTrigger') {
 		divId.setAttribute('class', 'registerPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/register');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -86,10 +140,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/register.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	} else if (triggerId === 'contactTrigger') {
 		divId.setAttribute('class', 'contactPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/contact');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -98,10 +155,13 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/contact.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	} else {
 		divId.setAttribute('class', 'homePage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
+		pageCall('/api/home');
+		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
@@ -110,6 +170,7 @@ const pageSwap = (triggerId, triggerClass) => {
 		scriptReplace.src = '../../API/JSCall/home.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
+		 */
 	}
 	accountHide();
 };

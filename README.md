@@ -1083,4 +1083,75 @@
 
 ---
 
+<h4 align="center">VERSION #.#</h4>
+
+---
+
+-   Commited changes BOD 20240530
+-   Push LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>pages.js</td>
+        <td>|1.1|=>|1.6|</td>
+        <td>=[API\controllers\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>index.js</td>
+        <td>|1.1|=>|1.6|</td>
+        <td>=[API\routes\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|1.1|=>|1.6|</td>
+        <td>=[MAINDIR\API\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>|1.5|=>|1.6|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|1.5|=>|1.6|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>REMOVED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|1.1|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
 ---

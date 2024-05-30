@@ -1,9 +1,12 @@
+require('dotenv').config();
+const cookieParser = require('cookie-parser');
 const express = require('express');
 const cors = require('cors');
-const mongoDB = require('./db/connect');
-
+const connectDB = require('../API/db/connect.js');
+connectDB();
 const app = express();
 const PORT = process.env.PORT || 3000;
+const methodOverride = require('method-override');
 
 // ROUTES
 app.use(cors())
@@ -15,7 +18,12 @@ app.use(cors())
 	.use('/', require('./routes/index.js'));
 // This will throw an error when not connected via ethernet
 
-mongoDB.initDB((err) => {
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+app.use(cookieParser());
+app.use(methodOverride('_method'));
+
+connectDB.initDB((err) => {
 	if (err) {
 		console.log(err);
 	} else {

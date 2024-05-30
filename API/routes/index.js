@@ -1,24 +1,25 @@
-const routes = require('express').Router();
+const express = require('express');
+const router = express.Router();
 const adminController = require('../controllers/admin.js');
 const userController = require('../controllers/pages.js');
-const router = router;
+
 // TEST ROUTES
-routes.get('/final', adminController.finalProof);
-routes.get('/test1', adminController.serverTest1);
-routes.get('/test2', adminController.serverTest2);
-routes.get('/predictions', adminController.getAllPredictions);
+router.get('/final', adminController.finalProof);
+router.get('/test1', adminController.serverTest1);
+router.get('/test2', adminController.serverTest2);
+router.get('/predictions', adminController.getAllPredictions);
 
 // PAGE ROUTES
-routes.get('/', userController.router);
-routes.get('/About', userController.aboutPage);
-routes.get('/Contact', userController.contactPage);
-routes.get('/Ask', userController.askPage);
-routes.get('/Answer', userController.answerPage);
-routes.get('/Sign_In', userController.signIn);
-routes.get('/Register', userController.registerPage);
-routes.get('/Sign_Out', userController.signOut);
+router.get('/api/home', userController.getHomePage);
+router.get('/api/about', userController.getAboutPage);
+router.get('/api/contact', userController.getContactPage);
+router.get('/api/ask', userController.getAskPage);
+router.get('/api/answer', userController.getAnswerPage);
+router.get('/api/signIn', userController.getSignInPage);
+router.get('/api/register', userController.getRegisterPage);
+router.get('/api/signOut', userController.getSignOutPage);
 
 // ROUTES REQUIRED:
-routes.use('/predictions', require('./prediction.js'));
+router.use('/predictions', require('./prediction.js'));
 
-module.exports = routes;
+module.exports = router;
