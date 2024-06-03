@@ -35,6 +35,8 @@
 
 ---
 
+---
+
 <h3 align="center">BRANCH 0</h3>
 
 <h4 align="center">VERSION 0.0</h4>
@@ -155,6 +157,10 @@
     </tr>
 </table>
 
+---
+
+---
+
 <h4 align="center">VERSION 0.0.1</h4>
 
 -   Installed NodeJS and ExpressJS Server modules
@@ -197,6 +203,8 @@
         <td></td>
     </tr>
 </table>
+
+---
 
 ---
 
@@ -248,6 +256,8 @@
         <td></td>
     </tr>
 </table>
+
+---
 
 ---
 
@@ -334,6 +344,8 @@
 
 ---
 
+---
+
 <h4 align="center">VERSION 0.0.4</h4>
 
 -   Project complete
@@ -416,6 +428,8 @@
 
 ---
 
+---
+
 <h4 align="center">VERSION 0.0.5</h4>
 
 -   Established outline for project
@@ -445,6 +459,8 @@
         <td></td>
     </tr>
 </table>
+
+---
 
 ---
 
@@ -716,6 +732,8 @@
 
 ---
 
+---
+
 <h4 align="center">VERSION 1.1</h4>
 
 -   Commited changes made 20240523
@@ -823,6 +841,8 @@
 
 ---
 
+---
+
 <h4 align="center">VERSION 1.2</h4>
 
 -   Commited changes 20240527
@@ -879,6 +899,8 @@
 
 ---
 
+---
+
 <h4 align="center">VERSION 1.3</h4>
 
 -   Commited changes 20240528=TTech EOD
@@ -920,6 +942,8 @@
         <td></td>
     </tr>
 </table>
+
+---
 
 ---
 
@@ -994,6 +1018,8 @@
         <td></td>
     </tr>
 </table>
+
+---
 
 ---
 
@@ -1083,7 +1109,9 @@
 
 ---
 
-<h4 align="center">VERSION #.#</h4>
+---
+
+<h4 align="center">VERSION 1.6</h4>
 
 ---
 
@@ -1147,6 +1175,138 @@
     <tr>
         <td>server.js</td>
         <td>|1.1|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+---
+
+<h4 align="center">VERSION 1.7</h4>
+
+-   Commited changes 20240603
+-   Pushed LOCAL to ORIGIN
+
+---
+
+<h5 align="center"><strong><em><u>REMOVED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+        <tr>
+        <td>prediction.js</td>
+        <td>|1.0|</td>
+        <td>=[API\routes\]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>MOVED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>JSCall\&+</td>
+        <td>|N/A|</td>
+        <td>=[API\JSCall\&+]=>[Client\public\&+]</td>
+        <td></td>
+    </tr>
+</table>
+
+---
+
+<h5 align="center"><strong><em><u>UPDATED</u></em></strong></h5>
+
+<table align="center">
+    <tr>
+        <th>ITEM</th>
+        <th>VERSION</th>
+        <th>DIR_LOC</th>
+        <th>COMMENT</th>
+    </tr>
+    <tr>
+        <td>controllers\+</td>
+        <td>|N/A|</td>
+        <td>=[API\controllers\+]</td>
+        <td>- +[admin.js|1.0|=>|1.7|]<br>- +[user.js|1.5|=>|1.7|]</td>
+    </tr>
+    <tr>
+        <td>customError.js</td>
+        <td>|1|=>|1.7|</td>
+        <td>=[API\errors\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>models\+</td>
+        <td>|N/A|</td>
+        <td>=[API\models\+]</td>
+        <td>- +[Eight.js|1.5|=>|1.7|]<br>- +[User.js|1.5|=>|1.7|]</td>
+    </tr>
+    <tr>
+        <td>routes\+</td>
+        <td>[N/A]</td>
+        <td>=[API\routes\+]</td>
+        <td>- +[admin.js|1|=>|1.7|]<br>- +[user.js|1|=>|1.7|]</td>
+    </tr>
+    <tr>
+        <td>.gitignore</td>
+        <td>|0.0|=>|1.7|</td>
+        <td>=[MAINDIR\API\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>routes.rest</td>
+        <td>|0.0.6|=>|1.7|</td>
+        <td>=[MAINDIR\API\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>server.js</td>
+        <td>|1.6|=>|1.7|</td>
+        <td>=[MAINDIR\API\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>JSCall\+</td>
+        <td>|N/A|</td>
+        <td>=[public\JSCall\+]</td>
+        <td>- +[about.js|1.3|=>|1.7|]<br>- +[answer.js|1.3|=>|1.7|]<br>- +[ask.js|1.3|=>|1.7|]<br>- +[contact.js|1.3|=>|1.7|]<br>- +[home.js|1.3|=>|1.7|]<br>- +[register.js|1.3|=>|1.7|]<br>- +[signin.js|1.3|=>|1.7|]<br>- +[signout.js|1.3|=>|1.7|]</td>
+    </tr>
+    <tr>
+        <td>index.html</td>
+        <td>|1.5|=>|1.7|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>scripts.js</td>
+        <td>|1.6|=>|1.7|</td>
+        <td>=[Client\public\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>README.md</td>
+        <td>|1.6|=>|1.7|</td>
+        <td>=[MAINDIR\]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>todo.txt</td>
+        <td>|1.4|=>|1.7|</td>
         <td>=[MAINDIR\]</td>
         <td></td>
     </tr>

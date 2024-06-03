@@ -7,44 +7,6 @@ let swapPrep = (trigger) => {
 	pageSwap(triggerId, triggerClass);
 };
 
-const pageCall = async (url) => {
-	const response = await fetch(url);
-	const scriptText = await response.text();
-	const scriptElement = document.createElement('script');
-	scriptElement.text = scriptText;
-	document.body.appendChild(scriptElement);
-};
-/* 
-const pageCall = async (url, id) => {
-	const scriptRemove = document.getElementById(id);
-	if (scriptRemove) {
-		scriptRemove.remove();
-	}
-	const response = await fetch(url);
-	const scriptText = await response.text();
-	const scriptElement = document.createElement('script');
-	scriptElement.id = id;
-	scriptElement.text = scriptText;
-	document.body.appendChild(scriptElement);
-};
- */
-/* 
-const pageCall = async (url, id) => {
-	const response = await fetch(url);
-	const pageContent = await response.text();
-	const divId = document.getElementById('divId');
-	divId.innerHTML = pageContent;
-	const scriptTags = divId.getElementsByTagName('script');
-	for (let script of scriptTags) {
-		const newScript = document.createElement('script');
-		if (script.src) {
-			newScript.text = script.innerHTML;
-		}
-		document.body.appendChild(newScript);
-	}
-};
- */
-
 const pageSwap = (triggerId, triggerClass) => {
 	const divId = document.getElementById('divId');
 	const mainId = document.getElementById('mainId');
@@ -55,122 +17,98 @@ const pageSwap = (triggerId, triggerClass) => {
 		divId.setAttribute('class', 'askPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/ask');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/ask.js';
+		scriptReplace.src = './JSCall/ask.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
- 		*/
 	} else if (triggerId === 'aboutTrigger') {
 		divId.setAttribute('class', 'aboutPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/about');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/about.js';
+		scriptReplace.src = './JSCall/about.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	} else if (triggerId === 'answerTrigger') {
 		divId.setAttribute('class', 'answerPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/answer');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/answer.js';
+		scriptReplace.src = './JSCall/answer.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	} else if (triggerId === 'signInTrigger') {
 		divId.setAttribute('class', 'signInPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/signIn');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/signIn.js';
+		scriptReplace.src = './JSCall/signIn.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	} else if (triggerId === 'signOutTrigger') {
 		divId.setAttribute('class', 'signOutPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/signOut');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/signOut.js';
+		scriptReplace.src = './JSCall/signOut.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	} else if (triggerId === 'registerTrigger') {
 		divId.setAttribute('class', 'registerPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/register');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/register.js';
+		scriptReplace.src = './JSCall/register.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	} else if (triggerId === 'contactTrigger') {
 		divId.setAttribute('class', 'contactPage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/contact');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/contact.js';
+		scriptReplace.src = './JSCall/contact.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	} else {
 		divId.setAttribute('class', 'homePage');
 		divId.innerHTML = '';
 		mainId.insertBefore(divId, mainId.firstChild);
-		pageCall('/api/home');
-		/* 
 		const scriptRemove = document.getElementById('scriptSwap');
 		if (scriptRemove) {
 			scriptRemove.remove();
 		}
 		const scriptReplace = document.createElement('script');
-		scriptReplace.src = '../../API/JSCall/home.js';
+		scriptReplace.src = './JSCall/home.js';
 		scriptReplace.id = 'scriptSwap';
 		document.body.appendChild(scriptReplace);
-		 */
 	}
 	accountHide();
 };
@@ -183,16 +121,10 @@ function accountHide() {
 	let signOut = document.querySelector('button.signOutPage');
 	let register = document.querySelector('button.registerPage');
 	let user = document.getElementById('userName');
-	/* 	console.log(currentPage);
-	console.log(signIn);
-	console.log(signOut);
-	console.log(register);
-	console.log(user); */
 
 	// USER CHECK
 	localStorage.setItem('user', 'loggedOut');
 	let userState = localStorage.getItem('user');
-	// localStorage.setItem('user', '');
 
 	// NAV HIDE / SHOW DISPLAY FUNCTION
 	if (signIn !== '' && register !== '' && signOut !== '' && user !== '') {
@@ -272,6 +204,8 @@ function accountHide() {
 	}
 }
 
+// TEST AREA
+
 /* 
 	// HIDE SIGN IN BUTTON IF: AUTHENTICATED / ON PAGE
 	let signInHide = document.querySelector('li.signInPage');
@@ -305,56 +239,56 @@ function askTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'askPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/ask.js');
+	askSwap.setAttribute('src', './JSCall/ask.js');
 	console.log(divId);
 }
 function homeTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'homePage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/home.js');
+	askSwap.setAttribute('src', './JSCall/home.js');
 	console.log(divId);
 }
 function aboutTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'aboutPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/about.js');
+	askSwap.setAttribute('src', './JSCall/about.js');
 	console.log(divId);
 }
 function answerTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'answerPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/answer.js');
+	askSwap.setAttribute('src', './JSCall/answer.js');
 	console.log(divId);
 }
 function signInTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'signInPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/signin.js');
+	askSwap.setAttribute('src', './JSCall/signin.js');
 	console.log(divId);
 }
 function signOutTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'signOutPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/signout.js');
+	askSwap.setAttribute('src', './JSCall/signout.js');
 	console.log(divId);
 }
 function registerTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'registerPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/register.js');
+	askSwap.setAttribute('src', './JSCall/register.js');
 	console.log(divId);
 }
 function contactTrigger() {
 	let divId = document.getElementById('divId');
 	divId.setAttribute('class', 'contactPage');
 	let askSwap = document.getElementById('scriptSwap');
-	askSwap.setAttribute('src', '../../API/JSCall/contact.js');
+	askSwap.setAttribute('src', './JSCall/contact.js');
 	console.log(divId);
 }
 

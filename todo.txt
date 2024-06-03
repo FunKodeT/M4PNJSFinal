@@ -20,7 +20,7 @@
                         * A chat app using Socket.IO
                         * A shopping app with products that include a login
                         * A manager app that lets you add, remove, or delete data
-                2. My application needs to consist of these minimums:
+                [2.] My application needs to consist of these minimums:
                         * A front-end user interface
                         * A back-end database
                         * Editable data
@@ -64,8 +64,8 @@
                 [1.] GitHub Repo M4PNJSFinal.git
                         * @ https://www.github.com/FunKodeT/M4PNJSFinal.git
                 |COMPLETE|
-        5. 8-Ball Application Outline
-                1. Home Page:
+        [5.] 8-Ball Application Outline
+                [1.] Home Page:
                         * Background: 8 Ball - Empty
                         * Navigation Bar: Ask, About, Answer ([SIGN IN] || [USERNAME])
                         * Large Header: Do you know your future?
@@ -74,7 +74,7 @@
                                 - Contact Us=>Contact Page
                                 - About Us=>About Page
                                 - History Lesson=>External URL to wikipedia or something
-                2. Ask Page:
+                [2.] Ask Page:
                         * Background: 8 Ball - Question Mark
                         * Navigation Bar: Home, About, Answer ([SIGN IN] || [USERNAME])
                         * Large Header: What future do you wish to see?
@@ -83,7 +83,7 @@
                                 - Contact Us=>Contact Page
                                 - About Us=>About Page
                                 - History Lesson=>External URL to wikipedia or something
-                3. About Page:
+                [3.] About Page:
                         * Background: 8 Ball - Glowy
                         * Navigation Bar: Ask, About, Answer ([SIGN IN] || [USERNAME])
                         * Large Header: Who are we?
@@ -92,7 +92,7 @@
                                 - Contact Us=>Contact Page
                                 - About Us=>About Page
                                 - History Lesson=>External URL to wikipedia or something
-                4. Answer Page:
+                [4.] Answer Page:
                         * Background: 8 Ball - Answer
                                 - Page will be split, one half will be the background with an 8-ball image according to the answer the algorithm spit out
                                 - Second half will be a section for seeing previous queries.
@@ -101,7 +101,7 @@
                         * Large Header: <User Question>
                         * Large Header: Magic Eight Ball Says:
                                 - Organize where the header will be just above the image of the 8-ball answer
-                5. Sign In Page:
+                [5.] Sign In Page:
                         * Background: 8 Ball - Empty
                         * Basic Sign on section
                         * Additional 'No account? Register Now!'
@@ -113,7 +113,7 @@
                                 Background: 8 Ball - Empty
                                 Text: Sorry! The 8-Ball must have missed something...  
                         }
-                6. Register Page:
+                [6.] Register Page:
                         * Background: 8 Ball - Question Mark
                         * Basic registration section
                                 - USERNAME:
@@ -135,14 +135,14 @@
                                 Background: 8 Ball - Empty
                                 Text: Sorry! The 8-Ball must have missed something...
                         }
-                7. Contact Us Page:
+                [7.] Contact Us Page:
                         * Background: 8 Ball - No
                         * Text: Don't
-		8. Sign Out Page:
+		[8.] Sign Out Page:
 			* Background: 8 Ball - Goodbye
 			* Text: The 8-Ball predicts you will come back and see us soon!
-        6. Test the project before completion
+        [6.] Test the project before completion
         7. Submission must be the GitHub repository URL
-        8. Submission must have a video submission showing project functionality
+        [8.] Submission must have a video submission showing project functionality
         )
 }
