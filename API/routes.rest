@@ -1,14 +1,5 @@
-### GET SERVERTEST1 ROUTE
-GET http://localhost:3000/test1 HTTP/1.1
-
-### GET SERVERTEST2 ROUTE
-GET http://localhost:3000/test2 HTTP/1.1
-
-### GET ALLPREDICTIONS ROUTE
-GET http://localhost:3000/predictions HTTP/1.1
-
-### GET ONEPREDICTION ROUTE
-GET http://localhost:3000/predictions/(//Insert_predictionID) HTTP/1.1
+### GET TEST ROUTE
+GET http://localhost:3000/test HTTP/1.1
 
 ### POST NEWPREDICTION ROUTE
 POST http://localhost:3000/predictions HTTP/1.1
@@ -17,6 +8,3 @@ Content-Type: application/json
     "userQuery": "Example?",
     "ballAnswer": "Answer.",
 }
-
-### DELETE DELPREDICTION ROUTE
-DELETE http://localhost:3000/predictions/(//Insert_predictionID) HTTP/1.1
